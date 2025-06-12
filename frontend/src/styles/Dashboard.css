@@ -1,0 +1,913 @@
+/* Reset zoom level */
+html, body {
+  font-size: 14px;
+}
+
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Apply neo-brutalism to the whole page container if needed */
+.full-page-neo {
+  /* Optional: Add base page styles here */
+}
+
+/* Sidebar Styles */
+.dashboard-sidebar.neo-sidebar {
+  width: 240px;
+  background-color: white;
+  border-right: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  box-shadow: 5px 0px 0px rgba(0, 0, 0, 0.9);
+  z-index: 10;
+  box-sizing: border-box;
+}
+
+.sidebar-header {
+  width: 100%;
+  margin-bottom: 0.75rem;
+  text-align: left;
+}
+
+.sidebar-header h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.medi-text {
+  color: black;
+}
+
+.agent-text {
+  color: #0066ff;
+}
+
+.sidebar-header span {
+  font-size: 0.8rem;
+  color: #555;
+  font-weight: bold;
+}
+
+.doctor-profile.neo-card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border: 2px solid black;
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.9);
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.profile-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #0066ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0.75rem;
+  border: 1px solid black;
+  flex-shrink: 0;
+}
+
+.profile-image .icon {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.profile-info h3 {
+  font-weight: bold;
+  margin-bottom: 0.15rem;
+  font-size: 1rem;
+}
+
+.profile-info p {
+  font-size: 0.8rem;
+  color: #555;
+}
+
+.profile-info p.email {
+  margin-top: 0.25rem;
+  font-size: 0.8rem;
+  color: #333;
+  word-break: break-word;
+}
+
+.profile-info p.email strong {
+  font-weight: bold;
+}
+
+.dashboard-nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: auto;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  border: 2px solid black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+  background-color: white;
+  position: relative;
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.9);
+  text-align: left;
+  width: 100%;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  font-size: 0.9rem;
+}
+
+.nav-item .icon {
+  margin-right: 0.6rem;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.nav-item .nav-text {
+  font-size: 0.9rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-grow: 1;
+}
+
+.nav-item:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.9);
+  background-color: #f0f0f0;
+}
+
+.nav-item.active {
+  background-color: #0066ff;
+  color: white;
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.9);
+}
+
+.nav-item.active:hover {
+  background-color: #0055dd;
+}
+
+.logout-btn.neo-button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 1.5rem;
+  padding: 0.5rem 0.75rem;
+  border: 2px solid black;
+  background-color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.9);
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 0.9rem;
+}
+
+.logout-btn.neo-button .icon {
+  margin-right: 0.6rem;
+  font-size: 1rem;
+}
+
+.logout-btn.neo-button .nav-text {
+  font-size: 0.9rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-grow: 1;
+}
+
+.logout-btn.neo-button:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.9);
+  background-color: #f0f0f0;
+}
+
+/* Main Content Styles */
+.dashboard-main {
+  flex: 1;
+  padding: 1.5rem;
+  overflow-y: auto;
+  background-color: #f5f5f5;
+}
+
+.dashboard-header {
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid black;
+}
+
+.dashboard-header h1 {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+/* Neo Card Style for main content area */
+.dashboard-content.neo-card {
+  background-color: white;
+  padding: 1.5rem;
+  border: 2px solid black;
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.9);
+}
+
+/* General View Header Styles */
+.view-header {
+    margin-bottom: 1.5rem;
+}
+.view-header h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.view-header p {
+    color: #555;
+    font-size: 0.9rem;
+}
+.view-header.with-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Neo Section Style */
+.neo-section {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px dashed #ccc;
+}
+.neo-section:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+.neo-section h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.7rem;
+}
+
+/* Stats Grid */
+.stats-grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.stat-card-neo {
+  background-color: white;
+  padding: 1rem;
+  border: 2px solid black;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.9);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.stat-card-neo h3 {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.4rem;
+}
+
+.stat-card-neo .stat-value {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: black;
+}
+
+/* Icons for stat cards (Using background images or pseudo-elements) */
+.stat-card-neo::before {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-right: 1rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* Add specific icons below */
+}
+
+.stat-card-neo.icon-patients::before {
+    background-image: url('data:image/svg+xml;...'); /* Replace with actual SVG/icon */
+}
+.stat-card-neo.icon-appointments-today::before {
+    background-image: url('data:image/svg+xml;...'); /* Replace with actual SVG/icon */
+}
+.stat-card-neo.icon-total-appointments::before {
+    background-image: url('data:image/svg+xml;...'); /* Replace with actual SVG/icon */
+}
+
+/* Table Styles */
+.table-container-neo {
+  width: 100%;
+  overflow-x: auto;
+  border: 2px solid black;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.9);
+  margin-bottom: 1.5rem;
+  background-color: white;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #f0f0f0;
+  border-bottom: 2px solid black;
+}
+
+th, td {
+  padding: 0.6rem 0.8rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  font-weight: bold;
+  text-transform: none;
+  font-size: 0.9rem;
+}
+
+td {
+  font-size: 0.85rem;
+}
+
+.status-tag {
+  display: inline-block;
+  padding: 0.3rem 0.6rem;
+  border-radius: 0;
+  background-color: #fff0dd;
+  color: #ff8800;
+  font-weight: bold;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  border: 2px solid #ff8800;
+}
+
+.status-tag.completed {
+  background-color: #e8f5e9;
+  color: #4caf50;
+  border-color: #4caf50;
+}
+
+.status-tag.cancelled {
+  background-color: #ffebee;
+  color: #f44336;
+  border-color: #f44336;
+}
+
+.action-btn-neo {
+  padding: 0.4rem 0.7rem;
+  margin-right: 0.5rem;
+  background-color: white;
+  border: 2px solid black;
+  font-weight: bold;
+  font-size: 0.8rem;
+  cursor: pointer;
+  display: inline-block;
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.9);
+}
+
+.action-btn-neo:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.9);
+}
+
+.action-btn-neo.view {
+  background-color: #0066ff;
+  color: white;
+}
+
+.action-btn-neo.message {
+  background-color: white;
+  color: black;
+}
+
+/* Appointments Summary */
+.appointments-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.appointment-summary-card.neo-card-small {
+  padding: 1rem;
+  border: 3px solid black;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.9);
+  background-color: white;
+  margin-bottom: 1rem;
+}
+
+.appointment-summary-card h4 {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.appointment-summary-card p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Available Slots Section */
+.slots-list {
+    /* Style for displaying slots */
+}
+
+/* Calendar Styles */
+.calendar-section {
+    /* Add specific calendar container styles if needed */
+}
+
+/* FullCalendar specific overrides */
+.fc {
+    /* Example: customize font */
+    font-family: inherit;
+}
+.fc .fc-toolbar-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.fc .fc-button {
+    background-color: #e5e7eb;
+    border: 2px solid black;
+    color: #374151;
+    text-shadow: none;
+    box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.9);
+    transition: all 0.2s;
+    padding: 0.4em 0.8em;
+    margin: 0 0.2em;
+    text-transform: capitalize;
+}
+.fc .fc-button:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.9);
+    background-color: #d1d5db;
+}
+.fc .fc-button-primary {
+    background-color: #3b82f6;
+    color: white;
+}
+.fc .fc-button-primary:hover {
+    background-color: #2563eb;
+}
+
+.fc .fc-daygrid-day-number,
+.fc .fc-col-header-cell-cushion {
+    color: #333;
+    text-decoration: none;
+}
+
+/* No Data Placeholder */
+.no-data {
+    font-style: italic;
+    color: #666;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Loading and error messages */
+.loading, .error-message {
+  padding: 1.5rem;
+  text-align: center;
+  border: 2px solid black;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.9);
+  margin: 1rem 0;
+  font-weight: bold;
+}
+
+.loading {
+  background-color: #f0f8ff;
+}
+
+.error-message {
+  background-color: #fff0f0;
+  color: #d32f2f;
+}
+
+/* Responsive adjustments if needed */
+@media (max-width: 768px) {
+    .dashboard-sidebar.neo-sidebar {
+        /* Adjust sidebar for mobile if needed */
+        box-shadow: none;
+        border-right: none;
+        border-bottom: 3px solid black;
+    }
+    .stats-grid-container {
+        grid-template-columns: 1fr; /* Stack stats */
+    }
+    .action-btn-neo {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.8rem;
+    }
+}
+
+/* Appointment view specific styles */
+.slot-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.slot-chip {
+  display: flex;
+  align-items: center;
+  background-color: #e3f2fd;
+  border: 2px solid black;
+  border-radius: 0px;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.9);
+}
+
+.slot-chip .remove-slot {
+  margin-left: 0.5rem;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: #555;
+}
+
+.slot-chip .remove-slot:hover {
+  color: #d32f2f;
+}
+
+/* Modal backdrop */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.modal-content {
+  background-color: white;
+  width: 90%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+  border: 2px solid black;
+  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.9);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 2px solid black;
+}
+
+.modal-header h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.close-modal {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal-body {
+  padding: 1rem;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  padding: 1rem;
+  border-top: 2px solid #eee;
+}
+
+/* Form elements */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.form-group select,
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid black;
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.9);
+  font-size: 1rem;
+}
+
+/* Time slot grid */
+.time-slots-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.time-slot-btn {
+  position: relative;
+  padding: 0.5rem;
+  border: 2px solid black;
+  background-color: white;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.9);
+}
+
+.time-slot-btn:hover:not(:disabled) {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.9);
+  background-color: #f0f0f0;
+}
+
+.time-slot-btn.selected {
+  background-color: #2196f3;
+  color: white;
+}
+
+.time-slot-btn.booked {
+  background-color: #e0e0e0;
+  border-color: #9e9e9e;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.booked-badge {
+  position: absolute;
+  top: -0.5rem;
+  right: -0.5rem;
+  background-color: #9e9e9e;
+  color: white;
+  font-size: 0.7rem;
+  padding: 0.1rem 0.25rem;
+  border-radius: 2px;
+}
+
+/* Action buttons */
+.action-btn-neo.primary {
+  background-color: #2196f3;
+  color: white;
+  border: 2px solid #0d47a1;
+}
+
+.action-btn-neo.primary:hover {
+  background-color: #1976d2;
+}
+
+.action-btn-neo.cancel {
+  background-color: white;
+  color: #333;
+  border: 2px solid black;
+}
+
+.action-btn-neo:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Calendar styles */
+.calendar-section {
+  margin-top: 2rem;
+}
+
+.fc .fc-event {
+  border-radius: 0;
+  font-weight: 500;
+  padding: 0.25rem;
+  margin-top: 1px;
+}
+
+/* Availability Management */
+.action-buttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.availability-section {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: var(--neo-card-bg);
+  border-radius: 10px;
+  box-shadow: var(--neo-shadow);
+}
+
+.no-data-message {
+  padding: 15px;
+  background-color: rgba(var(--neo-primary-rgb), 0.1);
+  border-radius: 8px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.slots-container {
+  margin: 15px 0;
+}
+
+.slot-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.slot-tag {
+  display: flex;
+  align-items: center;
+  background-color: rgba(var(--neo-primary-rgb), 0.15);
+  padding: 6px 12px;
+  border-radius: 50px;
+  font-size: 14px;
+}
+
+.slot-text {
+  margin-right: 8px;
+}
+
+.remove-slot-btn {
+  background: none;
+  border: none;
+  color: #f44336;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+.remove-slot-btn:hover {
+  background-color: rgba(244, 67, 54, 0.1);
+}
+
+/* Add Availability Modal */
+.time-slot-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin: 15px 0;
+}
+
+@media (max-width: 768px) {
+  .time-slot-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .time-slot-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.time-slot-item {
+  padding: 8px;
+  border: 1px solid var(--neo-border-color);
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.time-slot-item:hover {
+  background-color: rgba(var(--neo-primary-rgb), 0.05);
+}
+
+.time-slot-item.selected {
+  background-color: rgba(var(--neo-primary-rgb), 0.2);
+  border-color: var(--neo-primary-color);
+  font-weight: bold;
+}
+
+/* Calendar styling */
+.calendar-container {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: var(--neo-card-bg);
+  border-radius: 10px;
+  box-shadow: var(--neo-shadow);
+}
+
+.calendar-event {
+  padding: 2px 4px;
+  overflow: hidden;
+}
+
+.event-title {
+  font-weight: bold;
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.event-time {
+  font-size: 11px;
+}
+
+.availability-event {
+  opacity: 0.7;
+}
+
+.appointment-event {
+  font-weight: bold;
+}
+
+/* Modal styling */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  width: 100%;
+  max-width: 500px;
+  padding: 25px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: var(--neo-shadow);
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-group label {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.neo-input {
+  padding: 10px;
+  border: 1px solid var(--neo-border-color);
+  border-radius: 8px;
+  background-color: var(--neo-bg);
+  font-size: 16px;
+  width: 100%;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+} 

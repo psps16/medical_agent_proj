@@ -1,0 +1,42 @@
+nav {
+  background-color: var(--light);
+  color: var(--dark);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 100px;
+}
+
+nav .logo-container {
+  flex: 0 0 auto;
+}
+
+nav .button-container {
+  flex: 0 0 auto;
+  margin-right: 150px;
+}
+
+nav .text-blue-500 {
+  color: var(--secondary);
+}
+
+nav .bg-blue-500 {
+  background-color: var(--secondary);
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--dark);
+}
+
+nav a.hover\:text-blue-500:hover {
+  color: var(--secondary);
+}
+
+nav .transition {
+  transition: all 0.2s ease;
+}
+
+nav .neo-btn {
+  text-decoration: none;
+}

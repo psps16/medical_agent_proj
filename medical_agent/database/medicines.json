@@ -1,0 +1,927 @@
+[
+  {
+    "name": "Aspirin",
+    "generic_name": "acetylsalicylic acid",
+    "category": "Pain Relief",
+    "is_antibiotic": false,
+    "prescription_required": false,
+    "description": "Used to treat pain, fever, and inflammation. It can also be used as a blood thinner.",
+    "dosage": "Adults: 325-650 mg every 4-6 hours as needed",
+    "side_effects": "Stomach irritation, heartburn, nausea, vomiting",
+    "contraindications": "History of asthma, stomach ulcers, bleeding disorders",
+    "quantity": 98,
+    "price": 5.99,
+    "symptoms": [
+      "headache",
+      "fever",
+      "minor pain",
+      "inflammation",
+      "joint pain"
+    ]
+  },
+  {
+    "name": "Amoxicillin",
+    "generic_name": "amoxicillin",
+    "category": "Antibiotic",
+    "is_antibiotic": true,
+    "prescription_required": true,
+    "description": "Used to treat a variety of bacterial infections, including respiratory infections, ear infections, and urinary tract infections.",
+    "dosage": "Adults: 250-500 mg three times daily for 7-10 days",
+    "side_effects": "Diarrhea, stomach discomfort, rash",
+    "contraindications": "Allergy to penicillin antibiotics",
+    "quantity": 50,
+    "price": 12.49,
+    "symptoms": [
+      "bacterial infection",
+      "sore throat",
+      "ear infection",
+      "urinary tract infection",
+      "respiratory infection"
+    ]
+  },
+  {
+    "name": "Lisinopril",
+    "generic_name": "lisinopril",
+    "category": "Blood Pressure",
+    "is_antibiotic": false,
+    "prescription_required": true,
+    "description": "Used to treat high blood pressure and heart failure, and to improve survival after a heart attack.",
+    "dosage": "Adults: 10-40 mg once daily",
+    "side_effects": "Dry cough, dizziness, headache",
+    "contraindications": "Pregnancy, history of angioedema",
+    "quantity": 75,
+    "price": 8.99,
+    "symptoms": [
+      "high blood pressure",
+      "hypertension",
+      "heart failure"
+    ]
+  },
+  {
+    "name": "Metformin",
+    "generic_name": "metformin hydrochloride",
+    "category": "Diabetes",
+    "is_antibiotic": false,
+    "prescription_required": true,
+    "description": "Used to control blood sugar levels in people with type 2 diabetes.",
+    "dosage": "Adults: Starting at 500 mg twice daily, max 2000 mg daily",
+    "side_effects": "Nausea, diarrhea, stomach discomfort",
+    "contraindications": "Kidney disease, liver disease, heart failure",
+    "quantity": 60,
+    "price": 10.99,
+    "symptoms": [
+      "high blood sugar",
+      "type 2 diabetes",
+      "insulin resistance"
+    ]
+  },
+  {
+    "name": "Atorvastatin",
+    "generic_name": "atorvastatin calcium",
+    "category": "Cholesterol",
+    "is_antibiotic": false,
+    "prescription_required": true,
+    "description": "Used to lower cholesterol and reduce the risk of heart disease.",
+    "dosage": "Adults: 10-80 mg once daily",
+    "side_effects": "Muscle pain, headache, digestive issues",
+    "contraindications": "Liver disease, pregnancy",
+    "quantity": 45,
+    "price": 15.49,
+    "symptoms": [
+      "high cholesterol",
+      "elevated LDL",
+      "heart disease risk"
+    ]
+  },
+  {
+    "name": "Levothyroxine",
+    "generic_name": "levothyroxine sodium",
+    "category": "Thyroid",
+    "is_antibiotic": false,
+    "prescription_required": true,
+    "description": "Used to treat an underactive thyroid (hypothyroidism).",
+    "dosage": "Adults: 50-200 mcg once daily",
+    "side_effects": "Headache, insomnia, tremors when dosage is too high",
+    "contraindications": "Hypersensitivity, untreated adrenal insufficiency",
+    "quantity": 30,
+    "price": 14.99,
+    "symptoms": [
+      "fatigue",
+      "weight gain",
+      "cold sensitivity",
+      "underactive thyroid",
+      "hypothyroidism"
+    ]
+  },
+  {
+    "name": "Albuterol",
+    "generic_name": "albuterol sulfate",
+    "category": "Respiratory",
+    "is_antibiotic": false,
+    "prescription_required": true,
+    "description": "Used to prevent and treat wheezing, shortness of breath, and breathing difficulties caused by asthma and COPD.",
+    "dosage": "Adults: 2 inhalations every 4-6 hours as needed",
+    "side_effects": "Nervousness, tremor, headache, fast heartbeat",
+    "contraindications": "Hypersensitivity to albuterol",
+    "quantity": 25,
+    "price": 19.99,
+    "symptoms": [
+      "wheezing",
+      "shortness of breath",
+      "asthma",
+      "breathing difficulty",
+      "COPD"
+    ]
+  },
+  {
+    "name": "Omeprazole",
+    "generic_name": "omeprazole",
+    "category": "Gastrointestinal",
+    "is_antibiotic": false,
+    "prescription_required": false,
+    "description": "Used to treat heartburn, gastroesophageal reflux disease (GERD), and stomach ulcers.",
+    "dosage": "Adults: 20-40 mg once daily",
+    "side_effects": "Headache, stomach pain, nausea, diarrhea",
+    "contraindications": "Hypersensitivity to proton pump inhibitors",
+    "quantity": 40,
+    "price": 9.49,
+    "symptoms": [
+      "heartburn",
+      "acid reflux",
+      "GERD",
+      "stomach ulcer",
+      "indigestion"
+    ]
+  },
+  {
+    "name": "Sertraline",
+    "generic_name": "sertraline hydrochloride",
+    "category": "Mental Health",
+    "is_antibiotic": false,
+    "prescription_required": true,
+    "description": "Used to treat depression, anxiety, and obsessive-compulsive disorder.",
+    "dosage": "Adults: 50-200 mg once daily",
+    "side_effects": "Nausea, diarrhea, insomnia, sexual dysfunction",
+    "contraindications": "Use of MAO inhibitors within 14 days",
+    "quantity": 35,
+    "price": 18.99,
+    "symptoms": [
+      "depression",
+      "anxiety",
+      "obsessive-compulsive disorder",
+      "panic attacks",
+      "mood changes"
+    ]
+  },
+  {
+    "name": "Ibuprofen",
+    "generic_name": "ibuprofen",
+    "category": "Pain Relief",
+    "is_antibiotic": false,
+    "prescription_required": false,
+    "description": "Used to reduce fever and treat pain or inflammation caused by many conditions such as headache, toothache, back pain, arthritis, or minor injury.",
+    "dosage": "Adults: 200-400 mg every 4-6 hours as needed",
+    "side_effects": "Stomach pain, heartburn, dizziness",
+    "contraindications": "History of heart problems, stroke, stomach ulcers",
+    "quantity": 80,
+    "price": 6.49,
+    "symptoms": [
+      "headache",
+      "toothache",
+      "back pain",
+      "arthritis",
+      "inflammation",
+      "minor pain",
+      "fever"
+    ]
+  },
+  {
+    "name": "Cetirizine",
+    "generic_name": "cetirizine hydrochloride",
+    "category": "Allergy",
+    "is_antibiotic": false,
+    "prescription_required": false,
+    "description": "Used to relieve allergy symptoms such as runny nose, sneezing, itchy or watery eyes, and itching of the nose or throat.",
+    "dosage": "Adults: 5-10 mg once daily",
+    "side_effects": "Drowsiness, dry mouth, fatigue",
+    "contraindications": "Severe kidney disease",
+    "quantity": 65,
+    "price": 8.99,
+    "symptoms": [
+      "allergies",
+      "runny nose",
+      "sneezing",
+      "itchy eyes",
+      "watery eyes",
+      "hay fever",
+      "allergic rhinitis"
+    ]
+  },
+  {
+    "name": "Loratadine",
+    "generic_name": "loratadine",
+    "category": "Allergy",
+    "is_antibiotic": false,
+    "prescription_required": false,
+    "description": "Non-drowsy antihistamine that relieves allergy symptoms such as sneezing, runny nose, and itchy, watery eyes.",
+    "dosage": "Adults: 10 mg once daily",
+    "side_effects": "Headache, dry mouth",
+    "contraindications": "Severe liver disease",
+    "quantity": 55,
+    "price": 7.99,
+    "symptoms": [
+      "allergies",
+      "runny nose",
+      "sneezing",
+      "itchy eyes",
+      "hay fever",
+      "allergic rhinitis"
+    ]
+  },
+  {
+    "name": "Acetaminophen",
+    "generic_name": "acetaminophen",
+    "category": "Pain Relief",
+    "is_antibiotic": false,
+    "prescription_required": false,
+    "description": "Used to reduce pain and fever. Unlike NSAIDs, it doesn't reduce inflammation.",
+    "dosage": "Adults: 325-650 mg every 4-6 hours, not exceeding 3000 mg per day",
+    "side_effects": "Liver damage at high doses, rare allergic reactions",
+    "contraindications": "Severe liver disease, alcohol use",
+    "quantity": 90,
+    "price": 5.49,
+    "symptoms": [
+      "headache",
+      "fever",
+      "minor pain",
+      "toothache",
+      "muscle aches"
+    ]
+  },
+  {
+    "name": "Naproxen",
+    "generic_name": "naproxen sodium",
+    "category": "Pain Relief",
+    "is_antibiotic": false,
+    "prescription_required": false,
+    "description": "NSAID used to relieve pain, reduce inflammation, and reduce fever.",
+    "dosage": "Adults: 220-440 mg every 8-12 hours as needed",
+    "side_effects": "Stomach pain, heartburn, dizziness, stomach bleeding",
+    "contraindications": "History of heart problems, stroke, stomach ulcers",
+    "quantity": 60,
+    "price": 8.99,
+    "symptoms": [
+      "headache",
+      "back pain",
+      "muscle pain",
+      "menstrual cramps",
+      "inflammation",
+      "arthritis",
+      "fever"
+    ]
+  },
+  {
+    "name": "Diphenhydramine",
+    "generic_name": "diphenhydramine hydrochloride",
+    "category": "Allergy",
+    "is_antibiotic": false,
+    "prescription_required": false,
+    "description": "Antihistamine that relieves allergy symptoms and also causes drowsiness, useful as a sleep aid.",
+    "dosage": "Adults: 25-50 mg every 4-6 hours as needed",
+    "side_effects": "Drowsiness, dry mouth, dizziness",
+    "contraindications": "Glaucoma, enlarged prostate, asthma",
+    "quantity": 60,
+    "price": 6.99,
+    "symptoms": [
+      "allergies",
+      "insomnia",
+      "runny nose",
+      "sneezing",
+      "itchy eyes",
+      "allergic reactions",
+      "difficulty sleeping"
+    ]
+  },
+  {
+    "name": "Guaifenesin",
+    "generic_name": "guaifenesin",
+    "category": "Respiratory",
+    "is_antibiotic": false,
+    "prescription_required": false,
+    "description": "Expectorant that helps loosen congestion and thin bronchial secretions to make coughs more productive.",
+    "dosage": "Adults: 200-400 mg every 4 hours, not exceeding 2400 mg per day",
+    "side_effects": "Nausea, vomiting, stomach pain",
+    "contraindications": "Chronic cough",
+    "quantity": 45,
+    "price": 7.49,
+    "symptoms": [
+      "chest congestion",
+      "productive cough",
+      "mucus",
+      "cold symptoms",
+      "bronchitis"
+    ]
+  },
+  {
+    "name": "Dextromethorphan",
+    "generic_name": "dextromethorphan hydrobromide",
+    "category": "Respiratory",
+    "is_antibiotic": false,
+    "prescription_required": false,
+    "description": "Cough suppressant that blocks the cough reflex in the brain.",
+    "dosage": "Adults: 10-30 mg every 4-8 hours, not exceeding 120 mg per day",
+    "side_effects": "Dizziness, drowsiness, nausea",
+    "contraindications": "MAO inhibitor use, asthma",
+    "quantity": 40,
+    "price": 8.29,
+    "symptoms": [
+      "dry cough",
+      "unproductive cough",
+      "cold symptoms",
+      "tickling throat",
+      "cough"
+    ]
+  },
+  {
+    "name": "Loperamide",
+    "generic_name": "loperamide hydrochloride",
+    "category": "Gastrointestinal",
+    "is_antibiotic": false,
+    "prescription_required": false,
+    "description": "Anti-diarrheal medication that slows down intestinal movement.",
+    "dosage": "Adults: 2 mg after loose stool, not exceeding 8 mg per day",
+    "side_effects": "Constipation, abdominal pain, dizziness",
+    "contraindications": "Bloody diarrhea, bacterial enterocolitis",
+    "quantity": 35,
+    "price": 6.99,
+    "symptoms": [
+      "diarrhea",
+      "loose stools",
+      "traveler's diarrhea",
+      "stomach upset"
+    ]
+  },
+  {
+    "name": "Simethicone",
+    "generic_name": "simethicone",
+    "category": "Gastrointestinal",
+    "is_antibiotic": false,
+    "prescription_required": false,
+    "description": "Anti-gas medication that relieves discomfort from excess gas in the stomach and intestines.",
+    "dosage": "Adults: 40-125 mg after meals and at bedtime as needed",
+    "side_effects": "Rare allergic reactions",
+    "contraindications": "None significant",
+    "quantity": 50,
+    "price": 5.99,
+    "symptoms": [
+      "gas",
+      "bloating",
+      "stomach discomfort",
+      "indigestion",
+      "pressure",
+      "fullness"
+    ]
+  },
+  {
+    "name": "Meclizine",
+    "generic_name": "meclizine hydrochloride",
+    "category": "Anti-Nausea",
+    "is_antibiotic": false,
+    "prescription_required": false,
+    "description": "Antihistamine that reduces symptoms of motion sickness and vertigo.",
+    "dosage": "Adults: 25-50 mg 1 hour before travel, then every 24 hours as needed",
+    "side_effects": "Drowsiness, dry mouth, blurred vision",
+    "contraindications": "Glaucoma",
+    "quantity": 30,
+    "price": 9.99,
+    "symptoms": [
+      "motion sickness",
+      "dizziness",
+      "vertigo",
+      "nausea",
+      "vomiting",
+      "inner ear problems"
+    ]
+  },
+  {
+    "name": "Artificial Tears",
+    "generic_name": "carboxymethylcellulose sodium",
+    "category": "Eye Care",
+    "is_antibiotic": false,
+    "prescription_required": false,
+    "description": "Lubricating eye drops that relieve dry, irritated eyes.",
+    "dosage": "1-2 drops in affected eye(s) as needed",
+    "side_effects": "Temporary blurred vision, mild eye irritation",
+    "contraindications": "Eye infection, contact lens sensitivity",
+    "quantity": 40,
+    "price": 8.99,
+    "symptoms": [
+      "dry eyes",
+      "eye irritation",
+      "eye strain",
+      "computer vision syndrome"
+    ]
+  },
+  {
+    "name": "Latanoprost",
+    "generic_name": "latanoprost",
+    "category": "Eye Care",
+    "is_antibiotic": false,
+    "prescription_required": true,
+    "description": "Prostaglandin analog used to treat glaucoma and high eye pressure.",
+    "dosage": "One drop in affected eye(s) once daily in the evening",
+    "side_effects": "Eye color changes, eyelash growth, eye irritation",
+    "contraindications": "Eye infection, recent eye surgery",
+    "quantity": 25,
+    "price": 29.99,
+    "symptoms": [
+      "glaucoma",
+      "high eye pressure",
+      "ocular hypertension"
+    ]
+  },
+  {
+    "name": "Amlodipine",
+    "generic_name": "amlodipine besylate",
+    "category": "Blood Pressure",
+    "is_antibiotic": false,
+    "prescription_required": true,
+    "description": "Calcium channel blocker used to treat high blood pressure and angina.",
+    "dosage": "Adults: 2.5-10 mg once daily",
+    "side_effects": "Swelling in legs, dizziness, flushing",
+    "contraindications": "Severe hypotension, heart failure",
+    "quantity": 60,
+    "price": 12.99,
+    "symptoms": [
+      "high blood pressure",
+      "chest pain",
+      "angina"
+    ]
+  },
+  {
+    "name": "Losartan",
+    "generic_name": "losartan potassium",
+    "category": "Blood Pressure",
+    "is_antibiotic": false,
+    "prescription_required": true,
+    "description": "Angiotensin receptor blocker (ARB) used to treat high blood pressure and protect kidneys in diabetes.",
+    "dosage": "Adults: 25-100 mg once daily",
+    "side_effects": "Dizziness, muscle cramps, fatigue",
+    "contraindications": "Pregnancy, bilateral renal artery stenosis",
+    "quantity": 45,
+    "price": 15.99,
+    "symptoms": [
+      "high blood pressure",
+      "diabetic kidney disease",
+      "hypertension"
+    ]
+  },
+  {
+    "name": "Glipizide",
+    "generic_name": "glipizide",
+    "category": "Diabetes",
+    "is_antibiotic": false,
+    "prescription_required": true,
+    "description": "Sulfonylurea that helps control blood sugar levels in type 2 diabetes.",
+    "dosage": "Adults: 5-40 mg daily",
+    "side_effects": "Low blood sugar, weight gain, nausea",
+    "contraindications": "Type 1 diabetes, diabetic ketoacidosis",
+    "quantity": 55,
+    "price": 13.99,
+    "symptoms": [
+      "type 2 diabetes",
+      "high blood sugar",
+      "diabetes mellitus"
+    ]
+  },
+  {
+    "name": "Lantus",
+    "generic_name": "insulin glargine",
+    "category": "Diabetes",
+    "is_antibiotic": false,
+    "prescription_required": true,
+    "description": "Long-acting insulin used to control blood sugar in diabetes.",
+    "dosage": "Individualized dosing based on patient needs",
+    "side_effects": "Low blood sugar, injection site reactions",
+    "contraindications": "Hypoglycemia",
+    "quantity": 30,
+    "price": 89.99,
+    "symptoms": [
+      "type 1 diabetes",
+      "type 2 diabetes",
+      "high blood sugar"
+    ]
+  },
+  {
+    "name": "Tobramycin Eye Drops",
+    "generic_name": "tobramycin",
+    "category": "Eye Care",
+    "is_antibiotic": true,
+    "prescription_required": true,
+    "description": "Antibiotic eye drops used to treat bacterial eye infections.",
+    "dosage": "1-2 drops in affected eye(s) every 4 hours",
+    "side_effects": "Eye irritation, itching, redness",
+    "contraindications": "Viral or fungal eye infections",
+    "quantity": 20,
+    "price": 24.99,
+    "symptoms": [
+      "eye infection",
+      "bacterial conjunctivitis",
+      "pink eye"
+    ]
+  },
+  {
+    "name": "Lumigan",
+    "generic_name": "bimatoprost",
+    "category": "Eye Care",
+    "is_antibiotic": false,
+    "prescription_required": true,
+    "description": "Prostaglandin analog used to treat glaucoma and ocular hypertension.",
+    "dosage": "One drop in affected eye(s) once daily in the evening",
+    "side_effects": "Eyelash growth, eye color changes, eye irritation",
+    "contraindications": "Active eye inflammation",
+    "quantity": 15,
+    "price": 119.99,
+    "symptoms": [
+      "glaucoma",
+      "high eye pressure",
+      "ocular hypertension"
+    ]
+  },
+  {
+    "name": "Valsartan",
+    "generic_name": "valsartan",
+    "category": "Blood Pressure",
+    "is_antibiotic": false,
+    "prescription_required": true,
+    "description": "Angiotensin receptor blocker used to treat high blood pressure and heart failure.",
+    "dosage": "Adults: 80-320 mg once daily",
+    "side_effects": "Dizziness, headache, fatigue",
+    "contraindications": "Pregnancy, severe liver disease",
+    "quantity": 40,
+    "price": 16.99,
+    "symptoms": [
+      "high blood pressure",
+      "heart failure",
+      "hypertension"
+    ]
+  },
+  {
+    "name": "Jardiance",
+    "generic_name": "empagliflozin",
+    "category": "Diabetes",
+    "is_antibiotic": false,
+    "prescription_required": true,
+    "description": "SGLT2 inhibitor used to lower blood sugar and reduce cardiovascular risk in type 2 diabetes.",
+    "dosage": "Adults: 10-25 mg once daily",
+    "side_effects": "Urinary tract infections, dehydration",
+    "contraindications": "Type 1 diabetes, severe kidney disease",
+    "quantity": 30,
+    "price": 499.99,
+    "symptoms": [
+      "type 2 diabetes",
+      "high blood sugar",
+      "cardiovascular risk"
+    ]
+  },
+  {
+    "name": "Systane Ultra",
+    "generic_name": "polyethylene glycol/propylene glycol",
+    "category": "Eye Care",
+    "is_antibiotic": false,
+    "prescription_required": false,
+    "description": "Lubricating eye drops for moderate to severe dry eyes.",
+    "dosage": "1-2 drops in affected eye(s) as needed",
+    "side_effects": "Temporary blurred vision, mild irritation",
+    "contraindications": "None significant",
+    "quantity": 50,
+    "price": 14.99,
+    "symptoms": [
+      "dry eyes",
+      "eye irritation",
+      "eye fatigue",
+      "contact lens discomfort"
+    ]
+  },
+  {
+    "name": "Metoprolol",
+    "generic_name": "metoprolol tartrate",
+    "category": "Blood Pressure",
+    "is_antibiotic": false,
+    "prescription_required": true,
+    "description": "Beta-blocker used to treat high blood pressure, angina, and heart failure.",
+    "dosage": "Adults: 25-100 mg twice daily",
+    "side_effects": "Fatigue, dizziness, slow heart rate",
+    "contraindications": "Severe heart block, severe heart failure",
+    "quantity": 55,
+    "price": 11.99,
+    "symptoms": [
+      "high blood pressure",
+      "chest pain",
+      "heart failure",
+      "rapid heart rate"
+    ]
+  },
+  {
+    "name": "Ozempic",
+    "generic_name": "semaglutide",
+    "category": "Diabetes",
+    "is_antibiotic": false,
+    "prescription_required": true,
+    "description": "GLP-1 receptor agonist used for type 2 diabetes and weight management.",
+    "dosage": "Initial: 0.25 mg once weekly, can increase to 1 mg weekly",
+    "side_effects": "Nausea, vomiting, diarrhea",
+    "contraindications": "Personal/family history of medullary thyroid cancer",
+    "quantity": 20,
+    "price": 899.99,
+    "symptoms": [
+      "type 2 diabetes",
+      "high blood sugar",
+      "obesity",
+      "weight management"
+    ]
+  },
+  {
+    "name": "Ketotifen Eye Drops",
+    "generic_name": "ketotifen fumarate",
+    "category": "Eye Care",
+    "is_antibiotic": false,
+    "prescription_required": false,
+    "description": "Antihistamine eye drops used to temporarily relieve itchy eyes due to allergies.",
+    "dosage": "One drop in each affected eye twice daily, every 8-12 hours, no more than twice per day.",
+    "side_effects": "Eye burning or stinging, blurred vision, dry eyes.",
+    "contraindications": "Hypersensitivity to any ingredient in the formulation.",
+    "quantity": 8,
+    "price": 11.49,
+    "symptoms": [
+      "eye itching",
+      "allergic conjunctivitis",
+      "red eyes",
+      "watery eyes"
+    ]
+  },
+  {
+    "name": "Olopatadine Eye Drops",
+    "generic_name": "olopatadine hydrochloride",
+    "category": "Eye Care",
+    "is_antibiotic": false,
+    "prescription_required": true,
+    "description": "Antihistamine and mast cell stabilizer eye drops used to treat itching associated with allergic conjunctivitis.",
+    "dosage": "One drop in each affected eye once daily.",
+    "side_effects": "Blurred vision, burning or stinging, dry eye, foreign body sensation.",
+    "contraindications": "Hypersensitivity to olopatadine or any component of the product.",
+    "quantity": 5,
+    "price": 27.99,
+    "symptoms": [
+      "eye itching",
+      "allergic conjunctivitis",
+      "red eyes",
+      "watery eyes",
+      "eye discomfort"
+    ]
+  },
+  {
+    "name": "Prednisolone Eye Drops",
+    "generic_name": "prednisolone acetate",
+    "category": "Eye Care",
+    "is_antibiotic": false,
+    "prescription_required": true,
+    "description": "Corticosteroid eye drops used to treat inflammation of the eye.",
+    "dosage": "As directed by a physician, typically 1-2 drops in the affected eye(s) several times a day, with tapering of the dose over time.",
+    "side_effects": "Increased eye pressure, glaucoma, cataract formation, delayed wound healing.",
+    "contraindications": "Untreated fungal, viral, or bacterial eye infections.",
+    "quantity": 5,
+    "price": 34.5,
+    "symptoms": [
+      "eye inflammation",
+      "red eyes",
+      "swelling",
+      "pain"
+    ]
+  },
+  {
+    "name": "Timolol Eye Drops",
+    "generic_name": "timolol maleate",
+    "category": "Eye Care",
+    "is_antibiotic": false,
+    "prescription_required": true,
+    "description": "Beta-blocker eye drops used to treat glaucoma and high pressure inside the eye.",
+    "dosage": "One drop in each affected eye once or twice daily.",
+    "side_effects": "Eye stinging or burning, blurred vision, slow heartbeat, fatigue.",
+    "contraindications": "Asthma, severe COPD, slow heart rate, heart block.",
+    "quantity": 10,
+    "price": 19.5,
+    "symptoms": [
+      "glaucoma",
+      "high eye pressure",
+      "ocular hypertension"
+    ]
+  },
+  {
+    "name": "Ranitidine",
+    "generic_name": "ranitidine hydrochloride",
+    "category": "Gastrointestinal",
+    "is_antibiotic": false,
+    "prescription_required": false,
+    "description": "H2 receptor antagonist used to reduce stomach acid production, treating conditions like heartburn and ulcers.",
+    "dosage": "Adults: 75-150 mg twice daily or 300 mg at bedtime.",
+    "side_effects": "Headache, dizziness, constipation, diarrhea.",
+    "contraindications": "Kidney disease, liver disease.",
+    "quantity": 60,
+    "price": 9.75,
+    "symptoms": [
+      "heartburn",
+      "acid reflux",
+      "stomach ulcer",
+      "indigestion"
+    ]
+  },
+  {
+    "name": "Montelukast",
+    "generic_name": "montelukast sodium",
+    "category": "Respiratory",
+    "is_antibiotic": false,
+    "prescription_required": true,
+    "description": "Leukotriene receptor antagonist used to prevent asthma symptoms and treat allergic rhinitis.",
+    "dosage": "Adults: 10 mg once daily in the evening.",
+    "side_effects": "Headache, stomach pain, fatigue, dizziness.",
+    "contraindications": "None well-established, but use with caution in liver disease.",
+    "quantity": 30,
+    "price": 22.99,
+    "symptoms": [
+      "asthma",
+      "allergies",
+      "wheezing",
+      "shortness of breath",
+      "runny nose",
+      "sneezing"
+    ]
+  },
+  {
+    "name": "Melatonin",
+    "generic_name": "melatonin",
+    "category": "Sleep Aid",
+    "is_antibiotic": false,
+    "prescription_required": false,
+    "description": "Hormone that regulates sleep and wakefulness, often used as a supplement for insomnia and jet lag.",
+    "dosage": "Adults: 1-10 mg at bedtime.",
+    "side_effects": "Drowsiness, dizziness, headache.",
+    "contraindications": "Autoimmune disorders, pregnancy and breastfeeding (consult a doctor).",
+    "quantity": 60,
+    "price": 10.5,
+    "symptoms": [
+      "insomnia",
+      "sleep disorder",
+      "jet lag"
+    ]
+  },
+  {
+    "name": "Fluticasone Nasal Spray",
+    "generic_name": "fluticasone propionate",
+    "category": "ENT",
+    "is_antibiotic": false,
+    "prescription_required": true,
+    "description": "Corticosteroid nasal spray used to treat nasal symptoms such as congestion, sneezing, and runny nose caused by seasonal or year-round allergies.",
+    "dosage": "Adults: 1-2 sprays in each nostril once daily",
+    "side_effects": "Nasal irritation, nosebleeds, headache, sore throat",
+    "contraindications": "Untreated nasal infections, recent nasal surgery or injury",
+    "quantity": 45,
+    "price": 24.99,
+    "symptoms": [
+      "nasal congestion",
+      "allergic rhinitis",
+      "seasonal allergies",
+      "runny nose",
+      "sinus pressure"
+    ]
+  },
+  {
+    "name": "Ofloxacin Otic Solution",
+    "generic_name": "ofloxacin",
+    "category": "ENT",
+    "is_antibiotic": true,
+    "prescription_required": true,
+    "description": "Antibiotic ear drops used to treat ear infections (otitis externa, otitis media) caused by bacteria.",
+    "dosage": "Adults: 5-10 drops in affected ear(s) twice daily for 7 days",
+    "side_effects": "Ear discomfort, itching, dizziness, bad taste if it drains into mouth",
+    "contraindications": "Perforated eardrum (in some cases), hypersensitivity to fluoroquinolones",
+    "quantity": 30,
+    "price": 32.99,
+    "symptoms": [
+      "ear infection",
+      "ear pain",
+      "swimmer's ear",
+      "otitis media",
+      "otitis externa",
+      "ear discharge"
+    ]
+  },
+  {
+    "name": "Phenylephrine Nasal Drops",
+    "generic_name": "phenylephrine hydrochloride",
+    "category": "ENT",
+    "is_antibiotic": false,
+    "prescription_required": false,
+    "description": "Decongestant nasal drops that shrink blood vessels in the nasal passages, reducing nasal congestion and sinus pressure.",
+    "dosage": "Adults: 1-2 drops in each nostril every 4 hours as needed",
+    "side_effects": "Temporary burning or stinging, sneezing, increased nasal dryness",
+    "contraindications": "Severe high blood pressure, heart disease, diabetes, thyroid disorders",
+    "quantity": 55,
+    "price": 8.49,
+    "symptoms": [
+      "nasal congestion",
+      "stuffy nose",
+      "sinus pressure",
+      "common cold",
+      "sinusitis"
+    ]
+  },
+  {
+    "name": "Penicillin V",
+    "generic_name": "phenoxymethylpenicillin",
+    "category": "Antibiotic",
+    "is_antibiotic": true,
+    "prescription_required": true,
+    "description": "Antibiotic used to treat bacterial infections such as strep throat.",
+    "dosage": "Adults: 250-500 mg every 6-8 hours for 10 days",
+    "side_effects": "Nausea, vomiting, diarrhea, allergic reactions",
+    "contraindications": "Allergy to penicillins",
+    "quantity": 30,
+    "price": 14.99,
+    "symptoms": [
+      "sore throat",
+      "strep throat",
+      "bacterial infection"
+    ]
+  },
+  {
+    "name": "Azithromycin",
+    "generic_name": "azithromycin",
+    "category": "Antibiotic",
+    "is_antibiotic": true,
+    "prescription_required": true,
+    "description": "Macrolide antibiotic used for bacterial throat infections in penicillin-allergic patients.",
+    "dosage": "Adults: 500 mg on day 1, then 250 mg once daily for 4 days",
+    "side_effects": "Diarrhea, nausea, abdominal pain, headache",
+    "contraindications": "Liver disease, allergy to macrolides",
+    "quantity": 6,
+    "price": 19.99,
+    "symptoms": [
+      "sore throat",
+      "bacterial infection",
+      "strep throat"
+    ]
+  },
+  {
+    "name": "Clindamycin",
+    "generic_name": "clindamycin hydrochloride",
+    "category": "Antibiotic",
+    "is_antibiotic": true,
+    "prescription_required": true,
+    "description": "Antibiotic used for serious bacterial throat infections, especially in penicillin-allergic patients.",
+    "dosage": "Adults: 150-300 mg every 6 hours",
+    "side_effects": "Diarrhea, abdominal pain, rash",
+    "contraindications": "History of colitis, allergy to clindamycin",
+    "quantity": 20,
+    "price": 24.99,
+    "symptoms": [
+      "sore throat",
+      "bacterial infection",
+      "strep throat"
+    ]
+  },
+  {
+    "name": "Benzocaine Lozenges",
+    "generic_name": "benzocaine",
+    "category": "Throat Lozenges",
+    "is_antibiotic": false,
+    "prescription_required": false,
+    "description": "Local anesthetic lozenges for temporary relief of sore throat pain.",
+    "dosage": "Adults: 1 lozenge every 2 hours as needed, do not exceed 10 lozenges per day",
+    "side_effects": "Numbness, mild irritation, rare allergic reactions",
+    "contraindications": "Allergy to local anesthetics",
+    "quantity": 22,
+    "price": 6.99,
+    "symptoms": [
+      "sore throat",
+      "throat pain"
+    ]
+  },
+  {
+    "name": "Phenol Throat Spray",
+    "generic_name": "phenol",
+    "category": "Throat Spray",
+    "is_antibiotic": false,
+    "prescription_required": false,
+    "description": "Antiseptic and local anesthetic spray for temporary relief of sore throat pain.",
+    "dosage": "Adults: 1-2 sprays every 2-3 hours as needed",
+    "side_effects": "Mild burning, numbness, rare allergic reactions",
+    "contraindications": "Allergy to phenol",
+    "quantity": 1,
+    "price": 5.49,
+    "symptoms": [
+      "sore throat",
+      "throat pain"
+    ]
+  }
+]

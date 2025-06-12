@@ -1,0 +1,126 @@
+:root {
+  --primary: #FF3B30;
+  --secondary: #0080FF;
+  --accent: #FFD60A;
+  --dark: #111111;
+  --light: #FFFFFF;
+  --offwhite: #F2F2F7;
+  font-size: 15px;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  background-color: var(--offwhite);
+  color: var(--dark);
+  overflow-x: hidden;
+  margin: 0; /* Reset default margin */
+  /* Remove default flex layout if not needed globally */
+  /* display: flex; */
+  /* place-items: center; */
+  min-width: 320px;
+  min-height: 100vh;
+  font-size: 15px;
+}
+
+.neo-border {
+  border: 3px solid var(--dark);
+  box-shadow: 5px 5px 0px var(--dark);
+}
+
+.neo-btn {
+  border: 3px solid var(--dark);
+  box-shadow: 5px 5px 0px var(--dark);
+  transition: all 0.2s ease;
+  font-weight: 700;
+}
+
+.neo-btn:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 7px 7px 0px var(--dark);
+}
+
+.diagonal-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+.diagonal-bg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150%;
+  height: 100%;
+  background-color: var(--accent);
+  transform: rotate(-5deg) translateX(-10%) translateY(-25%);
+  z-index: -1;
+}
+
+.feature-card {
+  border: 3px solid var(--dark);
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 8px 8px 0px var(--dark);
+}
+
+.pattern-dots {
+  background-image: radial-gradient(var(--dark) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.hash-pattern {
+  background: linear-gradient(90deg, var(--offwhite) 20px, transparent 1%) center, 
+              linear-gradient(var(--offwhite) 20px, transparent 1%) center, 
+              var(--secondary);
+  background-size: 22px 22px;
+}
+
+.pricing-card {
+  border: 3px solid var(--dark);
+  transition: transform 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+}
+
+.circle-accent {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: var(--accent);
+  z-index: -1;
+}
+
+.marquee {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.marquee-content {
+  display: inline-block;
+  animation: marquee 30s linear infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Ensure Tailwind directives are present */
